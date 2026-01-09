@@ -1,0 +1,49 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #3D3D3D;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+.logo { width: 80px; }
+.intro h1 { font-weight: bold; font-size: 28px; }
+.intro p { font-weight: 300; font-size: 18px; }
+
+/* Hero */
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* Portfolio */
+.portfolio h2 {
+  font-weight: bold;
+  margin-top: 40px;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+.project h3 {
+  font-weight: bold;
+  color: #0D4B6E;
+}
+.project a {
+  color: #BB1F25;
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background-color: #3D3

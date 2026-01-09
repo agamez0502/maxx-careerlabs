@@ -1,4 +1,6 @@
-/* GLOBAL */
+/* =====================
+   GLOBAL
+===================== */
 body {
   margin: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -6,7 +8,9 @@ body {
   text-align: center;
 }
 
-/* HEADER */
+/* =====================
+   HEADER
+===================== */
 .header {
   display: flex;
   justify-content: space-between;
@@ -30,13 +34,24 @@ body {
   margin: 5px 0 0;
 }
 
-/* HERO */
+/* =====================
+   HERO
+===================== */
+.hero {
+  max-height: 400px;
+  overflow: hidden;
+}
+
 .hero img {
   width: 100%;
+  height: 400px;
+  object-fit: cover;
   display: block;
 }
 
-/* PORTFOLIO */
+/* =====================
+   PORTFOLIO
+===================== */
 .portfolio {
   padding: 50px 0;
 }
@@ -54,16 +69,24 @@ body {
   padding: 0 40px;
 }
 
-.item img {
-  width: 100%;
-  max-width: 320px;
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.line {
+  width: 120px;
+  height: 2px;
+  background-color: #0D4B6E;
 }
 
 .item h3 {
   font-size: 24px;
   font-weight: 300;
   color: #0D4B6E;
-  margin: 15px 0 5px;
+  margin: 0;
 }
 
 .item a {
@@ -74,15 +97,26 @@ body {
   text-decoration: none;
 }
 
-/* FOOTER */
+.item img {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+/* =====================
+   FOOTER
+===================== */
 .footer {
   background-color: #3D3D3D;
   color: white;
   padding: 30px 0;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
-/* RESPONSIVE */
+/* =====================
+   RESPONSIVE
+===================== */
 @media (max-width: 768px) {
   .portfolio-items {
     flex-direction: column;
